@@ -40,20 +40,21 @@ p {
   font-weight: normal; /* Düzeltilmiş: regular yerine */
   color: var(--slate);
 }
-
+a {
+  color: inherit;
+}
 .address {
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   color: var(--navy-blue);
-  letter-spacing: 0.2em; 
+  letter-spacing: 0.32px;
   line-height: 1.5;
 }
 
 .address:hover,
 .address:active {
   color: var(--iris);
-   
 }
 
 .logo,
@@ -73,7 +74,7 @@ p {
   color: var(--navy-blue);
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.2em; /* Düzeltilmiş */
+  letter-spacing: 0.32; /* Düzeltilmiş */
   line-height: 1.5;
 }
 
@@ -93,22 +94,22 @@ p {
   background-color: var(--iris);
   font-weight: 500; /* medium yerine */
   font-size: 16px;
-  letter-spacing: 0.4em; /* Düzeltilmiş */
+  letter-spacing: 0.64px; /* Düzeltilmiş */
   text-align: center;
   width: 169px;
   height: 56px;
   border-radius: 4px; /* Düzeltilmiş */
   line-height: 1.5;
+  cursor: pointer;
+  border: none;
 }
 
 .button:hover {
   background-color: var(--ocean);
-  
 }
 
 .section-3 {
   background-color: var(--cloud);
-  
 }
 
 .section-3 .images {
@@ -131,12 +132,11 @@ footer {
   width: 1440px;
   height: 312px;
 }
-}
 
-.footer > p {
+.footer-logo > span {
   color: var(--cloud);
 }
 
-.footer-logo > span {
+footer > .footer-text {
   color: var(--cloud);
 }
