@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --iris: #4d5ae5;
   --navy-blue: #2e2f42;
@@ -7,11 +8,13 @@
   --ocean: #404bbf;
   --slate: #434455;
 }
+
 header,
 body,
 footer {
   font-family: "Roboto", sans-serif;
 }
+
 h1 {
   font-size: 56px;
   font-weight: bold;
@@ -25,27 +28,34 @@ h2 {
   font-weight: bold;
   text-align: center;
 }
+
 h3 {
   font-size: 20px;
-  font-weight: medium;
+  font-weight: 500; /* Düzeltilmiş: medium yerine */
   color: var(--navy-blue);
 }
+
 p {
   font-size: 16px;
-  font-weight: regular;
+  font-weight: normal; /* Düzeltilmiş: regular yerine */
   color: var(--slate);
 }
 
 .address {
   font-size: 16px;
-  font-weight: regular;
+  font-weight: normal;
   font-style: normal;
   color: var(--navy-blue);
+  letter-spacing: 0.2em; 
+  line-height: 1.5;
 }
+
 .address:hover,
-address:active {
+.address:active {
   color: var(--iris);
+   
 }
+
 .logo,
 .footer-logo {
   color: var(--iris);
@@ -54,19 +64,20 @@ address:active {
   font-weight: 700;
   line-height: 1.5;
 }
+
 .logo > span {
   color: var(--navy-blue);
 }
+
 .navi {
   color: var(--navy-blue);
   font-size: 16px;
-  font-weight: regular;
-  letter-spacing: %2;
+  font-weight: 500;
+  letter-spacing: 0.2em; /* Düzeltilmiş */
   line-height: 1.5;
 }
-.navi:hover {
-  color: var(--ocean);
-}
+
+.navi:hover,
 .navi:active {
   color: var(--ocean);
 }
@@ -76,23 +87,28 @@ address:active {
   width: 1440px;
   height: 600px;
 }
+
 .button {
   color: white;
   background-color: var(--iris);
-  font-weight: medium;
+  font-weight: 500; /* medium yerine */
   font-size: 16px;
-  letter-spacing: %4;
+  letter-spacing: 0.4em; /* Düzeltilmiş */
   text-align: center;
   width: 169px;
   height: 56px;
-  radius: 4px;
+  border-radius: 4px; /* Düzeltilmiş */
+  line-height: 1.5;
 }
+
 .button:hover {
   background-color: var(--ocean);
+  
 }
 
 .section-3 {
   background-color: var(--cloud);
+  
 }
 
 .section-3 .images {
@@ -109,10 +125,15 @@ ul,
 ol {
   list-style-type: none;
 }
+
 footer {
   background-color: var(--navy-blue);
+  width: 1440px;
+  height: 312px;
 }
-footer > p {
+}
+
+.footer > p {
   color: var(--cloud);
 }
 
